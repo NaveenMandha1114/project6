@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Video Stream</title>
+    <title>HOUSEHOLD</title>
+    <script>
+        let isUserActive = false;
+
+        function setUserActive() {
+            isUserActive = true;
+        }
+
+        function setUserInactive() {
+            isUserActive = false;
+        }
+
+        document.addEventListener('mousemove', setUserActive);
+        document.addEventListener('keypress', setUserActive);
+        document.addEventListener('scroll', setUserActive);
+
+        function checkUserActivity() {
+            if (isUserActive) {
+                console.log('User is active');
+                isUserActive = false;
+            } else {
+                console.log('User is inactive');
+            }
+        }
+
+        setInterval(checkUserActivity, 5000);
+    </script>
+</head>
+<body>
+    <h1>User Activity Detection</h1>
+    
+    <div class="center-text">
+        <p>HOUSE FOR SALE</p>
+      </div>
+      <div class="colored-text">
+        <!-- Apply the class to each letter -->
+        <span class="red-letter">T</span>
+        <span class="red-letter">h</span>
+        <span class="red-letter">i</span>
+        <span class="red-letter">s</span>
+        <span class="red-letter">&nbsp;</span>
+        <span class="red-letter">t</span>
+        <span class="red-letter">e</span>
+        <span class="red-letter">x</span>
+        <span class="red-letter">t</span>
+        <span class="red-letter">&nbsp;</span>
+        <span class="red-letter">w</span>
+        <span class="red-letter">i</span>
+        <span class="red-letter">l</span>
+        <span class="red-letter">l</span>
+        <span class="red-letter">&nbsp;</span>
+        <span class="red-letter">b</span>
+        <span class="red-letter">e</span>
+        <span class="red-letter">&nbsp;</span>
+        <span class="red-letter">c</span>
+        <span class="red-letter">o</span>
+        <span class="red-letter">l</span>
+        <span class="red-letter">o</span>
+        <span class="red-letter">r</span>
+        <span class="red-letter">f</span>
+        <span class="red-letter">u</span>
+        <span class="red-letter">l</span>
+        <span class="red-letter">.</span>
+      </div class="center">
+      <img src="../static/images/tierra-mallorca-rgJ1J8SDEAY-unsplash.jpg" alt="" width="600" height="700">
+      <img src="../static/images/image.png" alt="" width="600" height="700">
+      <img src="../static/images/Car-Porch-for-Carp-parking.jpg" alt="" width="500" height="700"
+      <div class="main-interface">
+        <h1>GALARY OF THE HOUSE</h1>
+        <img src="../static/images/pexels-binyamin-mellish-106399.jpg" alt="NAVEEN MANDHA"width="300" height="300">>
+        <img src="../static/images/pexels-christa-grover-2121121.jpg" alt=""width="300" height="300">
+        <img src="../static/images/pexels-pixabay-276724.jpg" alt=""width="300" height="300">
+        <img src="../static/images/pexels-saviesa-home-2089698.jpg" alt=""width="300" height="300">
+        <video id="live-video" autoplay controls></video>
+
+<script>
+// Get reference to the video element
+const video = document.getElementById('live-video');
+
+// Replace 'your-video-stream-url' with the actual URL of your live video stream
+const videoStreamUrl = 'your-video-stream-url';
+
+// Set the source of the video to your live stream URL
+video.src = videoStreamUrl:"https://www.pinterest.com/videos/home-entrance-ideas-indian/917511549783/"
+
+// Handle errors, if any
+video.onerror = function() {
+    console.error('Failed to load video stream');
+};
+// Toggle play/pause when clicking on the video
+video.addEventListener('click', function() {
+    if (video.paused) {
+        video.play();
+    } else {
+        video.pause();
+    }
+});
+</script>
+    <div>
+    <h1>Contact Us</h1>
+    
+    <p>If you have any questions or inquiries, feel free to reach out to us:</p>
+    <div class="contact-details">
+        <h2>Contact Information</h2>
+        <p>Email: naveen@gmail.com</p>
+        <p>Email: keerthanaveen@gmail.com</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Address: 123 street, Hitech City, India</p>
+    </div>
+    
+    <div class="contact-form">
+        <h2>Contact Form</h2>
+        <form action="submit_contact.php" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+            
+            <input type="submit" value="Submit">
+        </form>       
+    <div class="copyright">
+        <p>Copyright © 2024 || All Rights Reserved || Developed By NAVEEN MANDHA</p>
+      </div>       
+</body>
+</html>
